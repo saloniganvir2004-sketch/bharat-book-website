@@ -8,28 +8,28 @@ export function EvidenceSection() {
   const cards = [
     {
       title: "PRIMARY SOURCES",
-      desc: "Inscriptions, ancient astronomical texts, architectural records and manuscript archives.",
+      desc: "Original records, texts and historical material examined in context.",
       icon: Scroll,
     },
     {
       title: "ACADEMIC RESEARCH",
-      desc: "Cross-verified historical analyses, peer-reviewed monographs and translation studies.",
+      desc: "Research, scholarship and competing historical interpretations.",
       icon: Library,
     },
     {
       title: "HISTORICAL RECORDS",
-      desc: "Court chronicles, traveler accounts, maritime logs and administrative rolls.",
+      desc: "Documented records used to examine events across different periods.",
       icon: FileText,
     },
     {
       title: "DOCUMENTED EVIDENCE",
-      desc: "Rigorous citation frameworks tracing historical claims back to primary repositories.",
+      desc: "Sources and citations that allow readers to examine claims for themselves.",
       icon: Search,
     },
   ];
 
   return (
-    <section id="evidence" className="relative py-28 px-4 sm:px-6 lg:px-8 bg-[#07101F] overflow-hidden">
+    <section id="evidence" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#07101F] overflow-hidden">
       
       {/* Background Atmosphere */}
       <div className="absolute inset-0 pointer-events-none">
@@ -37,10 +37,10 @@ export function EvidenceSection() {
         <div className="absolute inset-0 astronomical-grid opacity-15" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto space-y-16">
+      <div className="relative z-10 max-w-7xl mx-auto space-y-12">
         
         {/* Header */}
-        <div className="text-center space-y-4 max-w-3xl mx-auto">
+        <div className="text-center space-y-3 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B1628] border border-[#C9973E]/30 text-[#C9973E] text-[10px] font-mono tracking-[0.3em] uppercase">
             <Search className="w-3.5 h-3.5" />
             <span>RESEARCH PHILOSOPHY</span>
@@ -57,23 +57,23 @@ export function EvidenceSection() {
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {cards.map((card, idx) => {
             const IconComponent = card.icon;
             return (
               <motion.div
                 key={card.title}
-                initial={{ opacity: 0, y: 25 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: idx * 0.15, ease: "easeOut" }}
-                className="p-8 rounded-sm bg-[#0B1628]/90 border border-[#C9973E]/20 hover:border-[#C9973E]/60 transition-all duration-300 shadow-xl flex items-start gap-5 group"
+                transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
+                className="p-7 rounded-sm bg-[#0B1628]/90 border border-[#C9973E]/20 hover:border-[#C9973E]/60 transition-all duration-300 shadow-lg flex items-start gap-4 group"
               >
                 <div className="p-3 rounded-sm bg-[#C9973E]/10 border border-[#C9973E]/30 text-[#C9973E] group-hover:bg-[#C9973E] group-hover:text-[#07101F] transition-colors flex-shrink-0">
-                  <IconComponent className="w-6 h-6" />
+                  <IconComponent className="w-5 h-5" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-cinzel text-base font-bold tracking-[0.2em] text-[#F2EBDD] group-hover:text-[#E5B869] transition-colors">
+                <div className="space-y-1.5">
+                  <h3 className="font-cinzel text-base font-bold tracking-[0.18em] text-[#F2EBDD] group-hover:text-[#E5B869] transition-colors">
                     {card.title}
                   </h3>
                   <p className="text-sm text-[#A3B1C6] font-sans leading-relaxed">
@@ -87,11 +87,11 @@ export function EvidenceSection() {
 
         {/* Supporting Philosophy Line */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="p-8 rounded-sm bg-[#0B1628]/60 border border-[#C9973E]/30 max-w-4xl mx-auto text-center space-y-6"
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="p-7 rounded-sm bg-[#0B1628]/60 border border-[#C9973E]/30 max-w-4xl mx-auto text-center space-y-5"
         >
           <p className="font-cormorant text-xl sm:text-2xl text-[#F2EBDD] font-light leading-relaxed">
             The book distinguishes between established facts, competing interpretations and questions where the historical record remains disputed.
