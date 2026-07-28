@@ -6,7 +6,7 @@ import { Compass, ArrowRight } from "lucide-react";
 
 export function FinalCta() {
   return (
-    <section className="relative py-32 px-4 sm:px-6 lg:px-8 bg-[#050B15] text-center border-t border-[#C9973E]/20 overflow-hidden">
+    <section className="relative py-28 px-4 sm:px-6 lg:px-8 bg-[#050B15] text-center border-t border-[#C9973E]/20 overflow-hidden">
       
       {/* Background Atmosphere */}
       <div className="absolute inset-0 pointer-events-none">
@@ -14,7 +14,7 @@ export function FinalCta() {
         <div className="absolute inset-0 astronomical-grid opacity-20" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto space-y-10">
+      <div className="relative z-10 max-w-5xl mx-auto space-y-8">
         
         <div className="flex items-center justify-center gap-3 text-[#C9973E] opacity-80">
           <span className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#C9973E]" />
@@ -24,11 +24,11 @@ export function FinalCta() {
 
         {/* Huge Typography */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="space-y-4"
+          transition={{ duration: 0.9 }}
+          className="space-y-3"
         >
           <h2 className="font-cormorant text-3xl sm:text-5xl md:text-6xl text-[#A3B1C6] font-light leading-tight">
             SOME STORIES ARE TOLD.
@@ -45,8 +45,8 @@ export function FinalCta() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="pt-6 space-y-2"
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="pt-4 space-y-2"
         >
           <h3 className="font-cinzel text-5xl sm:text-7xl md:text-8xl font-black tracking-[0.2em] text-[#F2EBDD]">
             BHARAT
@@ -56,15 +56,15 @@ export function FinalCta() {
             The Hindu Civilization & Its Politics
           </p>
 
-          <p className="text-xs font-mono uppercase tracking-[0.4em] text-[#C9973E] pt-4">
+          <p className="text-xs font-mono uppercase tracking-[0.4em] text-[#C9973E] pt-3">
             COMING 2026
           </p>
         </motion.div>
 
-        {/* Button */}
-        <div className="pt-6">
+        {/* Button Smooth-Scrolling to Publication Email Signup Form */}
+        <div className="pt-4">
           <a
-            href="#coming-soon"
+            href="#publication-alert"
             className="inline-flex items-center gap-3 px-10 py-4 rounded-sm border border-[#C9973E] bg-[#C9973E] text-[#07101F] text-xs font-bold uppercase tracking-[0.25em] hover:bg-[#E5B869] transition-all duration-300 shadow-[0_0_30px_rgba(201,151,62,0.35)]"
           >
             <span>JOIN THE PUBLICATION LIST</span>

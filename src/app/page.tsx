@@ -21,7 +21,7 @@ export default function Home() {
       {/* 1. Transparent/Opaque Sticky Navigation */}
       <Navbar />
 
-      {/* 2. Cinematic Hero Section */}
+      {/* 2. Hero Section */}
       <HeroSection />
 
       {/* 3. Opening Mystery */}
@@ -30,19 +30,19 @@ export default function Home() {
       {/* 4. About The Book */}
       <AboutTheBook />
 
-      {/* 5. Cinematic Question Section */}
+      {/* 5. Question Section */}
       <QuestionSection />
 
       {/* 6. Glimpses of 15 Chapters */}
       <GlimpsesSection />
 
-      {/* 7. Historical Journey Timeline */}
+      {/* 7. Civilizational Chronology Timeline */}
       <HistoricalJourney />
 
       {/* 8. Evidence & Source Philosophy */}
       <EvidenceSection />
 
-      {/* 9. Visual Interlude */}
+      {/* 9. Visual Archive Interlude */}
       <VisualInterlude />
 
       {/* 10. About the Author */}

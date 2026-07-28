@@ -17,7 +17,7 @@ export function LaunchNotification() {
   };
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#050B15] border-t border-b border-[#C9973E]/20 overflow-hidden">
+    <section id="publication-alert" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#050B15] border-t border-b border-[#C9973E]/20 overflow-hidden">
       
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -25,14 +25,14 @@ export function LaunchNotification() {
         <div className="absolute inset-0 astronomical-grid opacity-15" />
       </div>
 
-      <div className="relative z-10 max-w-3xl mx-auto text-center space-y-8">
+      <div className="relative z-10 max-w-3xl mx-auto text-center space-y-7">
         
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B1628] border border-[#C9973E]/30 text-[#C9973E] text-[10px] font-mono tracking-[0.3em] uppercase">
           <Bell className="w-3.5 h-3.5" />
           <span>PUBLICATION ALERTS</span>
         </div>
 
-        <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-[0.15em] text-[#F2EBDD]">
+        <h2 className="font-cinzel text-3xl sm:text-4xl font-bold tracking-[0.15em] text-[#F2EBDD]">
           BE THERE WHEN BHARAT ARRIVES.
         </h2>
 
@@ -41,7 +41,7 @@ export function LaunchNotification() {
         </p>
 
         {/* Email Form */}
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4 pt-2">
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4 pt-1">
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <div className="relative w-full">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#C9973E]/60" />
@@ -57,7 +57,7 @@ export function LaunchNotification() {
             
             <button
               type="submit"
-              className="w-full sm:w-auto whitespace-nowrap px-8 py-3.5 rounded-sm border border-[#C9973E] bg-[#C9973E] text-[#07101F] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#E5B869] transition-all duration-300 shadow-[0_0_20px_rgba(201,151,62,0.3)]"
+              className="w-full sm:w-auto whitespace-nowrap px-8 py-3.5 rounded-sm border border-[#C9973E] bg-[#C9973E] text-[#07101F] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#E5B869] transition-all duration-300 shadow-[0_0_20px_rgba(201,151,62,0.3)] cursor-pointer"
             >
               NOTIFY ME
             </button>
