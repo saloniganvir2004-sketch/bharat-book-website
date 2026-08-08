@@ -9,7 +9,6 @@ import { ShoppingBag, Sparkles, MapPin, BookOpen } from "lucide-react";
 const RETAILER_CONFIG = {
   amazonUrl: "https://www.amazon.in/BHARAT-Hindu-Civilization-Its-Politics-ebook/dp/B0HC6JHM73/ref=sr_1_1?crid=2T5TGYNSLVM8T&dib=eyJ2IjoiMSJ9.qUbisCulTmcwlanN_TzRs1Z4mw3eg514-8Rul_hY9AqEaycw02AkFswb7pG6973WratAVhb0r7_BLCz3Uzks4bYZ6uzXztJsd_G-SshR6uUZFZObM9_LxAx8KtwW1WELh_u2_L4ECWHnWCrA21L9Mg.s37R5UWcMrzz7fEr93d9rYr4JEbZecHnUHq1dalDEb0&dib_tag=se&keywords=bharat+the+hindu+civilization+%26+its+politics&qid=1786204922&sprefix=bharat+the+hindu%2Caps%2C518&sr=8-1",
   kindleUrl: "https://read.amazon.in/kp/kshare?asin=B0HC6JHM73&id=t2uknc4bkzd33aodsulvys3jgi",
-  flipkartUrl: "", // e.g. "https://flipkart.com/..."
 };
 
 export function ComingSoonBuy() {
@@ -121,23 +120,6 @@ export function ComingSoonBuy() {
                   </div>
                   <span className="text-[10px] font-mono tracking-widest text-[#07101F] bg-[#C9973E] group-hover:bg-[#07101F] group-hover:text-[#C9973E] px-2.5 py-1 rounded font-bold uppercase transition-colors">
                     READ ON KINDLE
-                  </span>
-                </a>
-
-                {/* FLIPKART BUTTON */}
-                <a
-                  href="#coming-soon"
-                  className="w-full sm:w-auto min-w-[200px] flex items-center justify-between gap-4 px-6 py-4 rounded-sm border border-[#C9973E]/30 bg-[#0B1628]/60 text-[#A3B1C6] cursor-not-allowed opacity-95 transition-all shadow-lg"
-                  title="Flipkart purchasing link will activate upon publication"
-                >
-                  <div className="flex items-center gap-3">
-                    <ShoppingBag className="w-5 h-5 text-[#C9973E]/50" />
-                    <span className="font-cinzel text-sm font-bold tracking-[0.15em]">
-                      FLIPKART
-                    </span>
-                  </div>
-                  <span className="text-[10px] font-mono tracking-widest text-[#C9973E] bg-[#C9973E]/10 px-2 py-0.5 rounded border border-[#C9973E]/30 uppercase">
-                    COMING SOON
                   </span>
                 </a>
 
