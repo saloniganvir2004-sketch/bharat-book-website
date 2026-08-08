@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://bharatbook.com/sitemap.xml',
+    sitemap: 'https://bharat-book-website.vercel.app/sitemap.xml',
   };
 }

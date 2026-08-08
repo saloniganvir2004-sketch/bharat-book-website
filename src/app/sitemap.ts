@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bharatbook.com';
+  const baseUrl = 'https://bharat-book-website.vercel.app';
   
   return [
     {

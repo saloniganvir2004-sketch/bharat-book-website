@@ -3,11 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ShoppingBag, Sparkles, MapPin } from "lucide-react";
+import { ShoppingBag, Sparkles, MapPin, BookOpen } from "lucide-react";
 
 // Easily insert official retailer URLs here when available:
 const RETAILER_CONFIG = {
-  amazonUrl: "",   // e.g. "https://amazon.in/dp/..."
+  amazonUrl: "https://www.amazon.in/BHARAT-Hindu-Civilization-Its-Politics-ebook/dp/B0HC6JHM73/ref=sr_1_1?crid=2T5TGYNSLVM8T&dib=eyJ2IjoiMSJ9.qUbisCulTmcwlanN_TzRs1Z4mw3eg514-8Rul_hY9AqEaycw02AkFswb7pG6973WratAVhb0r7_BLCz3Uzks4bYZ6uzXztJsd_G-SshR6uUZFZObM9_LxAx8KtwW1WELh_u2_L4ECWHnWCrA21L9Mg.s37R5UWcMrzz7fEr93d9rYr4JEbZecHnUHq1dalDEb0&dib_tag=se&keywords=bharat+the+hindu+civilization+%26+its+politics&qid=1786204922&sprefix=bharat+the+hindu%2Caps%2C518&sr=8-1",
+  kindleUrl: "https://read.amazon.in/kp/kshare?asin=B0HC6JHM73&id=t2uknc4bkzd33aodsulvys3jgi",
   flipkartUrl: "", // e.g. "https://flipkart.com/..."
 };
 
@@ -72,7 +73,7 @@ export function ComingSoonBuy() {
                   BHARAT
                 </p>
                 <p className="text-xs font-mono uppercase tracking-[0.3em] text-[#C9973E] mt-1">
-                  COMING 2026
+                  AVAILABLE NOW
                 </p>
               </div>
             </div>
@@ -83,51 +84,60 @@ export function ComingSoonBuy() {
                 OFFICIAL RETAIL PARTNERS
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row flex-wrap items-center gap-4 justify-center lg:justify-start">
                 
                 {/* AMAZON BUTTON */}
                 <a
-                  href={RETAILER_CONFIG.amazonUrl || "#coming-soon"}
-                  target={RETAILER_CONFIG.amazonUrl ? "_blank" : "_self"}
-                  rel="noreferrer"
-                  className={`w-full sm:w-auto min-w-[200px] flex items-center justify-between gap-4 px-6 py-4 rounded-sm border border-[#C9973E]/50 bg-[#0B1628] text-[#F2EBDD] transition-all shadow-lg ${
-                    RETAILER_CONFIG.amazonUrl
-                      ? "hover:border-[#C9973E] hover:bg-[#C9973E] hover:text-[#07101F]"
-                      : "cursor-not-allowed opacity-95"
-                  }`}
-                  title={RETAILER_CONFIG.amazonUrl ? "Buy on Amazon" : "Amazon purchasing link will activate upon publication"}
+                  href={RETAILER_CONFIG.amazonUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto min-w-[200px] flex items-center justify-between gap-4 px-6 py-4 rounded-sm border border-[#C9973E]/70 bg-[#0B1628] hover:bg-[#C9973E] text-[#F2EBDD] hover:text-[#07101F] transition-all shadow-lg group"
+                  title="Buy on Amazon"
                 >
                   <div className="flex items-center gap-3">
-                    <ShoppingBag className="w-5 h-5 text-[#C9973E]" />
+                    <ShoppingBag className="w-5 h-5 text-[#C9973E] group-hover:text-[#07101F] transition-colors" />
                     <span className="font-cinzel text-sm font-bold tracking-[0.15em]">
                       AMAZON
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono tracking-widest text-[#C9973E] bg-[#C9973E]/10 px-2 py-0.5 rounded border border-[#C9973E]/30 uppercase">
-                    {RETAILER_CONFIG.amazonUrl ? "BUY NOW" : "COMING SOON"}
+                  <span className="text-[10px] font-mono tracking-widest text-[#07101F] bg-[#C9973E] group-hover:bg-[#07101F] group-hover:text-[#C9973E] px-2.5 py-1 rounded font-bold uppercase transition-colors">
+                    BUY ON AMAZON
+                  </span>
+                </a>
+
+                {/* KINDLE BUTTON */}
+                <a
+                  href={RETAILER_CONFIG.kindleUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto min-w-[200px] flex items-center justify-between gap-4 px-6 py-4 rounded-sm border border-[#C9973E]/70 bg-[#0B1628] hover:bg-[#C9973E] text-[#F2EBDD] hover:text-[#07101F] transition-all shadow-lg group"
+                  title="Read on Kindle"
+                >
+                  <div className="flex items-center gap-3">
+                    <BookOpen className="w-5 h-5 text-[#C9973E] group-hover:text-[#07101F] transition-colors" />
+                    <span className="font-cinzel text-sm font-bold tracking-[0.15em]">
+                      KINDLE
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-mono tracking-widest text-[#07101F] bg-[#C9973E] group-hover:bg-[#07101F] group-hover:text-[#C9973E] px-2.5 py-1 rounded font-bold uppercase transition-colors">
+                    READ ON KINDLE
                   </span>
                 </a>
 
                 {/* FLIPKART BUTTON */}
                 <a
-                  href={RETAILER_CONFIG.flipkartUrl || "#coming-soon"}
-                  target={RETAILER_CONFIG.flipkartUrl ? "_blank" : "_self"}
-                  rel="noreferrer"
-                  className={`w-full sm:w-auto min-w-[200px] flex items-center justify-between gap-4 px-6 py-4 rounded-sm border border-[#C9973E]/50 bg-[#0B1628] text-[#F2EBDD] transition-all shadow-lg ${
-                    RETAILER_CONFIG.flipkartUrl
-                      ? "hover:border-[#C9973E] hover:bg-[#C9973E] hover:text-[#07101F]"
-                      : "cursor-not-allowed opacity-95"
-                  }`}
-                  title={RETAILER_CONFIG.flipkartUrl ? "Buy on Flipkart" : "Flipkart purchasing link will activate upon publication"}
+                  href="#coming-soon"
+                  className="w-full sm:w-auto min-w-[200px] flex items-center justify-between gap-4 px-6 py-4 rounded-sm border border-[#C9973E]/30 bg-[#0B1628]/60 text-[#A3B1C6] cursor-not-allowed opacity-95 transition-all shadow-lg"
+                  title="Flipkart purchasing link will activate upon publication"
                 >
                   <div className="flex items-center gap-3">
-                    <ShoppingBag className="w-5 h-5 text-[#C9973E]" />
+                    <ShoppingBag className="w-5 h-5 text-[#C9973E]/50" />
                     <span className="font-cinzel text-sm font-bold tracking-[0.15em]">
                       FLIPKART
                     </span>
                   </div>
                   <span className="text-[10px] font-mono tracking-widest text-[#C9973E] bg-[#C9973E]/10 px-2 py-0.5 rounded border border-[#C9973E]/30 uppercase">
-                    {RETAILER_CONFIG.flipkartUrl ? "BUY NOW" : "COMING SOON"}
+                    COMING SOON
                   </span>
                 </a>
 

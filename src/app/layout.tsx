@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bharatbook.com"),
+  metadataBase: new URL("https://bharat-book-website.vercel.app"),
   title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
   description:
     "Discover BHARAT: The Hindu Civilization & Its Politics by Mayur Maskhare. A documented journey across India's civilizational history, knowledge, politics and enduring questions. Coming 2026.",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
     description:
       "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Coming 2026.",
-    url: "https://bharatbook.com",
+    url: "https://bharat-book-website.vercel.app",
     siteName: "BHARAT Official Book Website",
     images: [
       {
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     images: ["/images/og/bharat-og.png"],
   },
   alternates: {
-    canonical: "https://bharatbook.com",
+    canonical: "https://bharat-book-website.vercel.app",
   },
 };
 
