@@ -105,7 +105,7 @@ export function HeroSection() {
                 href="#coming-soon"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-sm border border-[#C9973E]/40 bg-[#0B1628]/70 backdrop-blur-md text-[#F2EBDD] text-xs font-bold uppercase tracking-[0.25em] hover:bg-[#0B1628] hover:border-[#C9973E] hover:text-[#E5B869] transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
               >
-                <span>COMING 2026</span>
+                <span>BUY NOW</span>
                 <ArrowRight className="w-4 h-4 text-[#C9973E]" />
               </a>
             </div>

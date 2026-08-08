@@ -116,7 +116,7 @@ export function AboutAuthor() {
 
               <div className="flex items-center gap-2 px-4 py-2 rounded-sm bg-[#0B1628] border border-[#C9973E]/30 text-xs font-mono tracking-[0.2em] text-[#F2EBDD]">
                 <Sparkles className="w-4 h-4 text-[#C9973E]" />
-                <span>FIRST EDITION • 2026</span>
+                <span>FIRST EDITION • AVAILABLE NOW</span>
               </div>
             </div>
 

@@ -14,7 +14,7 @@ export function BookDetails() {
     { label: "ISBN-13", value: "978-93-6068-755-7" },
     { label: "Language", value: "English" },
     { label: "Total Chapters", value: "15 Chapters" },
-    { label: "Availability Status", value: "Coming Soon (2026)" },
+    { label: "Availability Status", value: "Available Now" },
   ];
 
   return (

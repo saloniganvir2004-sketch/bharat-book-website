@@ -57,7 +57,7 @@ export function FinalCta() {
           </p>
 
           <p className="text-xs font-mono uppercase tracking-[0.4em] text-[#C9973E] pt-3">
-            COMING 2026
+            AVAILABLE NOW
           </p>
         </motion.div>
 

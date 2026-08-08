@@ -13,12 +13,12 @@ export function FaqSection() {
       a: "BHARAT explores India's civilizational journey across history, knowledge, politics and questions that continue to shape the present.",
     },
     {
-      q: "When will BHARAT be released?",
-      a: "BHARAT is planned for publication in 2026. The official release date will be announced here.",
+      q: "Is BHARAT available now?",
+      a: "BHARAT is available now on Amazon and Kindle.",
     },
     {
-      q: "Where will I be able to purchase it?",
-      a: "Purchase links for Amazon and Flipkart will be added when the book becomes available.",
+      q: "Where can I purchase it?",
+      a: "BHARAT is available for purchase on Amazon in paperback/ebook format and on Kindle.",
     },
     {
       q: "Are the claims in the book sourced?",

@@ -10,7 +10,7 @@ export function AboutTheBook() {
     { label: "15 CHAPTERS", desc: "A comprehensive civilizational scope", icon: Layers },
     { label: "ANCIENT → MODERN", desc: "Across thousands of recorded years", icon: BookOpen },
     { label: "DOCUMENTED SOURCES", desc: "Built strictly on historical records", icon: ShieldCheck },
-    { label: "FIRST EDITION • 2026", desc: "Official hardcover release", icon: Sparkles },
+    { label: "FIRST EDITION • AVAILABLE NOW", desc: "Official edition available now", icon: Sparkles },
   ];
 
   return (

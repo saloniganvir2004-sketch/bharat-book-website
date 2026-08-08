@@ -78,7 +78,7 @@ export function Footer() {
         {/* Bottom Copyright Bar */}
         <div className="pt-8 border-t border-[#C9973E]/10 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#A3B1C6]/60 gap-4">
           <p>© 2026 Mayur Maskhare. All rights reserved.</p>
-          <p className="uppercase tracking-widest text-[#C9973E]/80">FIRST EDITION • COMING 2026</p>
+          <p className="uppercase tracking-widest text-[#C9973E]/80">FIRST EDITION • AVAILABLE NOW</p>
         </div>
 
       </div>

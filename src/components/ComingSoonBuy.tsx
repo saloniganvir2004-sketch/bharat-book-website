@@ -147,7 +147,7 @@ export function ComingSoonBuy() {
             {/* Subtext */}
             <div className="flex items-center justify-center lg:justify-start gap-2 text-xs font-mono tracking-[0.25em] text-[#A3B1C6] pt-1">
               <MapPin className="w-4 h-4 text-[#C9973E]" />
-              <span>AVAILABLE SOON IN INDIA</span>
+              <span>AVAILABLE NOW ON AMAZON</span>
             </div>
 
           </motion.div>

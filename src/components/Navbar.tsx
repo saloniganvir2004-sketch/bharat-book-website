@@ -72,7 +72,7 @@ export function Navbar() {
               href="#coming-soon"
               className="inline-flex items-center gap-2 px-5 py-2 rounded-sm border border-[#C9973E]/50 bg-[#0B1628]/80 text-xs font-semibold uppercase tracking-[0.2em] text-[#F2EBDD] hover:bg-[#C9973E] hover:text-[#07101F] hover:border-[#C9973E] transition-all duration-300 shadow-[0_0_15px_rgba(201,151,62,0.1)] hover:shadow-[0_0_25px_rgba(201,151,62,0.35)]"
             >
-              <span>COMING 2026</span>
+              <span>BUY NOW</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -116,7 +116,7 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-sm border border-[#C9973E] bg-[#C9973E] text-[#07101F] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#E5B869] transition-all"
               >
-                <span>COMING 2026</span>
+                <span>BUY NOW</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>

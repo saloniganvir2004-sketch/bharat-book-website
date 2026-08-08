@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bharat-book-website.vercel.app"),
   title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
   description:
-    "Discover BHARAT: The Hindu Civilization & Its Politics by Mayur Maskhare. A documented journey across India's civilizational history, knowledge, politics and enduring questions. Coming 2026.",
+    "Discover BHARAT: The Hindu Civilization & Its Politics by Mayur Maskhare. A documented journey across India's civilizational history, knowledge, politics and enduring questions. Available now.",
   keywords: [
     "BHARAT",
     "Hindu Civilization",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
     description:
-      "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Coming 2026.",
+      "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Available now.",
     url: "https://bharat-book-website.vercel.app",
     siteName: "BHARAT Official Book Website",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
     description:
-      "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Coming 2026.",
+      "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Available now.",
     images: ["/images/og/bharat-og.png"],
   },
   alternates: {
