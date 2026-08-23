@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -30,21 +31,21 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const siteTitle = "BHARAT: The Hindu Civilization & Its Politics | Mayur Maskhare";
+const siteDescription =
+  "Discover BHARAT: The Hindu Civilization & Its Politics by Mayur Maskhare. A documented history of Indian civilization. Available now on Amazon and Kindle.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bharat-book-website.vercel.app"),
-  title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
-  description:
-    "Discover BHARAT: The Hindu Civilization & Its Politics by Mayur Maskhare. A documented journey across India's civilizational history, knowledge, politics and enduring questions. Available now.",
+  metadataBase: new URL(SITE_URL),
+  title: siteTitle,
+  description: siteDescription,
   keywords: [
-    "BHARAT",
-    "Hindu Civilization",
+    "BHARAT book",
+    "Hindu civilization book",
     "Mayur Maskhare",
-    "Indian History",
-    "Hindu Politics",
-    "Documented History",
-    "Civilization Book",
-    "Gyan Ganj",
-    "Itihasa",
+    "Indian history book",
+    "Bharat Amazon",
+    "Bharat Kindle",
   ],
   authors: [{ name: "Mayur Maskhare" }],
   publisher: "Mayur Maskhare",
@@ -53,17 +54,16 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
-    description:
-      "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Available now.",
-    url: "https://bharat-book-website.vercel.app",
+    title: siteTitle,
+    description: siteDescription,
+    url: SITE_URL,
     siteName: "BHARAT Official Book Website",
     images: [
       {
-        url: "/images/og/bharat-og.png",
-        width: 1200,
-        height: 630,
-        alt: "BHARAT: The Hindu Civilization & Its Politics by Mayur Maskhare",
+        url: "/images/BHARAT_Cover_final.png",
+        width: 1600,
+        height: 2560,
+        alt: siteTitle,
       },
     ],
     locale: "en_US",
@@ -71,13 +71,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BHARAT — The Hindu Civilization & Its Politics | Mayur Maskhare",
-    description:
-      "You were taught history. But were you taught all of it? A documented history of one civilization by Mayur Maskhare. Available now.",
-    images: ["/images/og/bharat-og.png"],
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images/BHARAT_Cover_final.png"],
   },
   alternates: {
-    canonical: "https://bharat-book-website.vercel.app",
+    canonical: SITE_URL,
   },
 };
 
@@ -86,11 +85,36 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "BHARAT: The Hindu Civilization & Its Politics",
+    "author": {
+      "@type": "Person",
+      "name": "Mayur Maskhare",
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mayur Maskhare",
+    },
+    "inLanguage": "en",
+    "isbn": "978-93-6068-755-7",
+    "bookFormat": "https://schema.org/EBook",
+    "url": SITE_URL,
+    "image": `${SITE_URL}/images/BHARAT_Cover_final.png`,
+  };
+
   return (
     <html
       lang="en"
       className={`${cinzel.variable} ${cormorant.variable} ${plusJakarta.variable} dark scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-[#07101F] text-[#F2EBDD] antialiased selection:bg-[#C9973E] selection:text-[#07101F] min-h-screen flex flex-col font-sans">
         {children}
       </body>
