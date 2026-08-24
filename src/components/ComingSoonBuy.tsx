@@ -152,6 +152,16 @@ export function ComingSoonBuy() {
               <span>AVAILABLE NOW ON AMAZON</span>
             </div>
 
+            {/* First Chapter Free Callout */}
+            <div className="pt-3 space-y-1.5 text-center lg:text-left">
+              <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#C9973E]">
+                READ THE FIRST CHAPTER FREE ON AMAZON & KINDLE
+              </p>
+              <p className="font-cormorant text-base sm:text-lg italic text-[#F2EBDD]/90 leading-relaxed">
+                &ldquo;The first chapter carries the weight of history. Every chapter after carries the weight of what was hidden.&rdquo;
+              </p>
+            </div>
+
           </motion.div>
 
         </div>
