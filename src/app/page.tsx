@@ -13,11 +13,13 @@ import { ComingSoonBuy } from "@/components/ComingSoonBuy";
 import { LaunchNotification } from "@/components/LaunchNotification";
 import { FaqSection } from "@/components/FaqSection";
 import { FinalCta } from "@/components/FinalCta";
+import { ScrollReset } from "@/components/ScrollReset";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#07101F] text-[#F2EBDD] flex flex-col relative selection:bg-[#C9973E] selection:text-[#07101F]">
+      <ScrollReset />
       {/* 1. Transparent/Opaque Sticky Navigation */}
       <Navbar />
 
