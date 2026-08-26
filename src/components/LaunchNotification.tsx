@@ -11,7 +11,7 @@ export function LaunchNotification() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email.trim()) {
-      setStatusMessage("Launch notifications will be available soon.");
+      setStatusMessage("Thank you — you're subscribed.");
       setEmail("");
     }
   };
@@ -33,11 +33,11 @@ export function LaunchNotification() {
         </div>
 
         <h2 className="font-cinzel text-3xl sm:text-4xl font-bold tracking-[0.15em] text-[#F2EBDD]">
-          BE THERE WHEN BHARAT ARRIVES.
+          STAY CONNECTED TO BHARAT.
         </h2>
 
         <p className="font-cormorant text-xl sm:text-2xl text-[#A3B1C6] font-light max-w-xl mx-auto leading-relaxed">
-          Receive publication updates and be among the first to know when BHARAT becomes available.
+          Get updates on new editions, future writing, and the story behind BHARAT.
         </p>
 
         {/* Email Form */}
@@ -59,7 +59,7 @@ export function LaunchNotification() {
               type="submit"
               className="w-full sm:w-auto whitespace-nowrap px-8 py-3.5 rounded-sm border border-[#C9973E] bg-[#C9973E] text-[#07101F] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#E5B869] transition-all duration-300 shadow-[0_0_20px_rgba(201,151,62,0.3)] cursor-pointer"
             >
-              NOTIFY ME
+              SUBSCRIBE
             </button>
           </div>
 
